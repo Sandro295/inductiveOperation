@@ -6,13 +6,15 @@ struct MaxFinderInputItem {
 };
 
 struct MaxFinderOutputItem {
-	double y;
-};
-
-struct MaxFinderOutput {
 	double currentMax;
 	unsigned int amountMax;
-	bool exists;
+};
+
+
+#define MAXFINDER_OUTPUTMAXCOUNT 1
+struct MaxFinderOutput {
+	unsigned count;
+	MaxFinderOutputItem sequence [MAXFINDER_OUTPUTMAXCOUNT];
 };
 
 struct MaxFinderParameters {
@@ -20,6 +22,8 @@ struct MaxFinderParameters {
 };
 
 struct MaxFinderExtension {
+	//int x_prev;
+	bool exists;
 };
 
 struct MaxFinder {
