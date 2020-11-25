@@ -10,7 +10,6 @@ struct MaxFinderOutputItem {
 	unsigned int amountMax;
 };
 
-
 #define MAXFINDER_OUTPUTMAXCOUNT 1
 struct MaxFinderOutput {
 	unsigned count;

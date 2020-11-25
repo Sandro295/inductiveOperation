@@ -8,7 +8,6 @@ int main() {
 	cin >> params.upperBound;
 	MaxFinder operation;
 	maxFinderInit (operation, params);
-
 	while (true) {
 		MaxFinderInputItem input;
 		cin >> input.x;
@@ -17,7 +16,6 @@ int main() {
 		}
 		MaxFinderOutput output;
 		maxFinderProcess(operation, input, output);
-
 		if (output.count > 0) {
 			for (unsigned i = 0; i < output.count; ++i) {
 				cout << output.sequence[i].currentMax << " - " << output.sequence[i].amountMax << endl;
